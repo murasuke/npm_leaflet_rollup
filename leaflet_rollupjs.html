@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>leaflet npm bundle js sample</title>
+  <style>
+    /* 画面全体に地図を表示 */
+    body { margin: 0 }
+    #map { height: 100vh; }
+  </style>
+  <link rel="stylesheet" href="./dist/bundle.css"> <!-- cssを読み込む -->
+  <script type="module">
+    // バンドルしたファイルを読み込む
+    // type="module"なので、DOMのロード後に実行される
+    import map from './dist/bundle.js';
+  </script>
+</head>
+<body>
+  <div id="map"></div>
+</body>
+</html>
